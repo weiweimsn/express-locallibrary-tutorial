@@ -2,8 +2,8 @@
 var mongoose = require('mongoose');
 
 //Set up default mongoose connection
-var mongoDB = 'mongodb://127.0.0.1/local';
-mongoose.connect(mongoDB);
+var mongoDB = 'mongodb://127.0.0.1/library';
+mongoose.connect(mongoDB, {useNewUrlParser: true});
 // Get Mongoose to use the global promise library
 mongoose.Promise = global.Promise;
 //Get the default connection
